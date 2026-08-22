@@ -1,0 +1,576 @@
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.leave-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  color: #172033;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.leave-header {
+  min-height: 82px;
+  padding: 0 5%;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+.leave-brand h1 {
+  margin: 0;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.leave-brand p {
+  margin: 4px 0 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.leave-user {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+.leave-user span {
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #374151;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-button {
+  border: none;
+
+  background: #222222;
+
+  color: #ffffff;
+
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.back-button:hover {
+  background: #000000;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.leave-container {
+  width: 90%;
+
+  max-width: 1100px;
+
+  margin: 40px auto 60px;
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.page-title {
+  margin-bottom: 28px;
+}
+
+.page-title h2 {
+  margin: 0;
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.page-title p {
+  margin: 8px 0 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.leave-section {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  padding: 30px;
+
+  margin-bottom: 25px;
+
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading h2,
+.my-leaves-header h2 {
+  margin: 0;
+
+  font-size: 23px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.section-heading p,
+.my-leaves-header p {
+  margin: 7px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.leave-form {
+  margin-top: 28px;
+}
+
+.form-group {
+  margin-bottom: 21px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #374151;
+}
+
+
+/* INPUTS */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 15px;
+
+  font-family: inherit;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #64748b;
+
+  box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.10);
+}
+
+.form-group textarea {
+  min-height: 120px;
+
+  resize: vertical;
+}
+
+
+/* =========================================================
+   DATE ROW
+========================================================= */
+
+.date-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.submit-leave-button {
+  margin-top: 3px;
+
+  padding: 13px 22px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #222222;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.submit-leave-button:hover {
+  background: #000000;
+}
+
+.submit-leave-button:disabled {
+  background: #9ca3af;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.leave-message {
+  margin-top: 18px;
+
+  padding: 12px 15px;
+
+  border-radius: 8px;
+
+  background: #f1f5f9;
+
+  border: 1px solid #e2e8f0;
+
+  color: #334155;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   MY LEAVES HEADER
+========================================================= */
+
+.my-leaves-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.request-count {
+  padding: 8px 14px;
+
+  border-radius: 20px;
+
+  background: #f1f5f9;
+
+  color: #475569;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.empty-leave {
+  margin-top: 25px;
+
+  padding: 50px 20px;
+
+  text-align: center;
+
+  border: 1px dashed #cbd5e1;
+
+  border-radius: 12px;
+
+  background: #fafafa;
+}
+
+.empty-icon {
+  font-size: 38px;
+
+  margin-bottom: 10px;
+}
+
+.empty-leave h3 {
+  margin: 0 0 7px;
+
+  font-size: 18px;
+
+  color: #334155;
+}
+
+.empty-leave p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   LEAVE LIST
+========================================================= */
+
+.leave-list {
+  margin-top: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+/* =========================================================
+   LEAVE CARD
+========================================================= */
+
+.leave-card {
+  padding: 21px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  transition: 0.2s;
+}
+
+.leave-card:hover {
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+}
+
+.leave-card-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.leave-card-header h3 {
+  margin: 0;
+
+  font-size: 18px;
+
+  color: #111827;
+}
+
+.leave-date {
+  margin: 6px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.leave-card-details {
+  margin-top: 16px;
+
+  padding-top: 14px;
+
+  border-top: 1px solid #f1f5f9;
+}
+
+.leave-card-details p {
+  margin: 7px 0;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.leave-card-details strong {
+  color: #1f2937;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.leave-status {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* PENDING */
+
+.leave-status.pending {
+  background: #fef3c7;
+
+  color: #92400e;
+}
+
+
+/* APPROVED */
+
+.leave-status.approved {
+  background: #dcfce7;
+
+  color: #166534;
+}
+
+
+/* REJECTED */
+
+.leave-status.rejected {
+  background: #fee2e2;
+
+  color: #b91c1c;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .leave-header {
+    min-height: auto;
+
+    padding: 20px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 16px;
+  }
+
+  .leave-user {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .leave-container {
+    width: 94%;
+
+    margin-top: 25px;
+  }
+
+  .leave-section {
+    padding: 21px;
+  }
+
+  .date-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .my-leaves-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .leave-card-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .submit-leave-button {
+    width: 100%;
+  }
+}
